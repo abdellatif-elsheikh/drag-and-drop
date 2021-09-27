@@ -67,7 +67,7 @@ function shuffleTheList(){
     }))
     .sort((a,b)=> a.sort - b.sort)
     .map(a => a.value);
-    console.log(shuffledCountries);
+
     createCountriesList()
 }
 shuffleTheList();

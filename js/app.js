@@ -109,7 +109,7 @@ function dragLeave() {
 }
 function dragDrop() {
     const dragEndIndex = Number(this.getAttribute("data-index"));
-    this.classList.remove("over");
+    this.querySelector(".draggble-item").classList.remove("over");
     swapItems(dragStartIndex,dragEndIndex)
     console.log(dragEndIndex);
 }

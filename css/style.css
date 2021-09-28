@@ -37,7 +37,7 @@ li {
 
 .list-item{
     display: flex;
-    border:1px solid #fff ;
+    border:1px solid rgb(221, 215, 215) ;
 }
 
 
@@ -59,8 +59,12 @@ li {
     justify-content: space-between;
     font-size: 18px;
     padding: 0 15px;
-    border: 1px solid #e1e1e1;
-    cursor: grab;
+    border: 1px solid #f3f3f3;
+    cursor: move;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .list-item.right .country-name {
@@ -69,7 +73,7 @@ li {
 .list-item.wrong .country-name {
     color: #ff3838;
 }
-.list-item.over .draggble-item {
+.over{
     background-color: #eaeaea;
 }
 

@@ -122,7 +122,7 @@ function dragDrop() {
 function checCorrectkOrder(e){
     listItems.forEach((item, index) => {
         const rightOrder = largestCountries[index];
-        const currentOrder =  item.querySelector(".draggble-item").textContent;
+        const currentOrder =  item.querySelector(".draggble-item").innerText;
 
         if(rightOrder === currentOrder){
             item.classList.add("right")
@@ -160,4 +160,4 @@ function addEvenetLlistners() {
     });
 }
 
-checkOrder.onclick = checCorrectkOrder
+checkOrder.onclick = checCorrectkOrder;
